@@ -4,9 +4,11 @@
     <v-footer color="transparent">
       <v-container>
         <v-row class="d-flex align-center">
-          <v-col cols="12" md="6" class="text-overline">
+          <v-col cols="12" md="6" class="d-flex text-overline">
+            <v-spacer class="hidden-md-and-up"></v-spacer>
             © Copyright {{ new Date().getFullYear() }} - BKSAPPS. All rights
             reserved.
+            <v-spacer></v-spacer>
           </v-col>
           <v-col class="d-flex flex-wrap" cols="12" md="6">
             <v-spacer></v-spacer>
@@ -22,6 +24,7 @@
                 {{ social.icon }}
               </v-icon>
             </v-btn>
+            <v-spacer class="hidden-md-and-up"></v-spacer>
           </v-col>
         </v-row>
       </v-container>

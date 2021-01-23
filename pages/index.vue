@@ -31,7 +31,14 @@
           <div
             style="position:relative;height: 512px;margin-top: 0;display: block;"
           >
-            <v-img src="/screen1.png" alt="" style="z-index:1;"></v-img>
+            <!-- max-width="100%" -->
+            <v-img
+              contain
+              max-height="512"
+              src="/screen1.png"
+              alt=""
+              style="z-index:1;"
+            ></v-img>
             <div
               style="border-radius: 100%;background-color: #FF5722;height: 100px;width: 100px;position: absolute;left: 0%;top: 15%;"
             ></div>
