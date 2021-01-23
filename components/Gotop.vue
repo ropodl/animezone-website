@@ -9,7 +9,11 @@
         right
         fab
         color="accent"
-        @click="$vuetify.goTo('#app', 'easeInOutCubic')"
+        @click="$vuetify.goTo('#app', {
+              duration: 200,
+              offset: 50,
+              easing: 'linear'
+            })"
         v-scroll="onScroll"
         v-show="fab"
         style="box-shadow: 0px 0px 0px 0px transparent !important;"

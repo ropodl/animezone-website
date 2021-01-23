@@ -15,6 +15,8 @@
               v-for="social in socialLinks"
               :key="social.id"
               :class="social.title"
+              :href="social.link"
+              target="_blank"
             >
               <v-icon>
                 {{ social.icon }}
@@ -35,17 +37,20 @@ export default {
         {
           id: "1",
           title: "Discord",
-          icon: "fab fa-discord"
+          icon: "fab fa-discord",
+          link: "https://discord.com/invite/s24egJNXqX"
         },
         {
           id: "2",
           title: "Reddit",
-          icon: "fab fa-reddit"
+          icon: "fab fa-reddit",
+          link: "https://www.reddit.com/r/animezoneapp"
         },
         {
           id: "3",
           title: "Github",
-          icon: "fab fa-github"
+          icon: "fab fa-github",
+          link: "https://github.com/spyderbibek/Anime-Zone"
         }
       ]
     };
