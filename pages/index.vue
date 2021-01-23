@@ -3,14 +3,16 @@
     <v-container>
       <v-row class="d-flex align-center">
         <v-col cols="12" md="6">
-          <div>
-            <div class="text-h3 mb-5 font-weight-light">
-              Discover new anime from all around the world
-            </div>
-            <div class="text-h6 mb-5 font-weight-light">
-              Best android app for every anime fans to enjoy streaming without
-              any hassle and mainly without any ads!
-            </div>
+          <!-- <div> -->
+          <div class="text-h3 mb-5 font-weight-light text-center text-md-left">
+            Discover new anime from all around the world
+          </div>
+          <div class="text-h6 mb-5 font-weight-light text-center text-md-left">
+            Best android app for every anime fans to enjoy streaming without any
+            hassle and mainly without any ads!
+          </div>
+          <div class="d-flex">
+            <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-btn
               class="mr-4 accent"
               rounded
@@ -19,19 +21,19 @@
               href="https://animezone.info/apk/animezone.apk"
               download
             >
-              <!-- style="background-color: #FF5722;" -->
               <v-icon class="mr-3">download</v-icon> Download App
             </v-btn>
             <v-btn x-large icon class="play-button" style="">
               <v-icon>play_arrow</v-icon>
             </v-btn>
+            <v-spacer></v-spacer>
           </div>
+          <!-- </div> -->
         </v-col>
         <v-col cols="12" md="6">
           <div
             style="position:relative;height: 512px;margin-top: 0;display: block;"
           >
-            <!-- max-width="100%" -->
             <v-img
               contain
               max-height="512"
@@ -48,18 +50,6 @@
             <div
               style="border-radius: 100%;background-color: #FF5722;height: 250px;width: 250px;position: absolute;left: 50%;bottom: 0%;"
             ></div>
-            <!-- <div style="position: absolute;bottom: -6px;left: 0;">
-              <img
-                height="400px"
-                src="https://uxtheme.net/demos/shade/s08/image/hero-phone-1.png"
-              />
-            </div> -->
-            <!-- <div style="position:absolute;bottom:-6px;left: 118px;">
-              <img
-                height="512px"
-                src="https://uxtheme.net/demos/shade/s08/image/hero-phone-2.png"
-              />
-            </div> -->
           </div>
         </v-col>
       </v-row>
@@ -81,9 +71,7 @@
       <v-row id="downloadnow" class="my-16 d-flex align-center">
         <v-col class="d-flex" cols="12">
           <div class="mx-auto accent" style="border-radius:100px;">
-            <!-- <v-btn icon x-large class="ma-10"> -->
             <v-icon x-large class="pa-7">fal fa-download</v-icon>
-            <!-- </v-btn> -->
           </div>
         </v-col>
         <v-col cols="12" class="d-flex justify-center">
