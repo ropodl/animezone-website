@@ -4,7 +4,7 @@
     <v-footer color="transparent">
       <v-container>
         <v-row class="d-flex align-center">
-          <v-col cols="12" md="6" class="d-flex text-overline">
+          <v-col cols="12" md="6" class="d-flex text-overline text-center">
             <v-spacer class="hidden-md-and-up"></v-spacer>
             © Copyright {{ new Date().getFullYear() }} - BKSAPPS. All rights
             reserved.
