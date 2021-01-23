@@ -66,13 +66,14 @@
       <!-- fixed -->
       <v-navigation-drawer bottom height="auto" temporary app v-model="drawer">
         <v-list dense>
+          <!-- router
+            link -->
           <v-list-item
-            router
-            link
             v-for="link in links"
             :key="link.id"
             :to="link.route"
             color="error"
+            @click="goto(link)"
           >
             <v-list-item-icon>
               <v-icon>{{ link.icon }}</v-icon>
@@ -120,43 +121,37 @@ export default {
         {
           id: "1",
           name: "Features",
-          icon: "home",
-          route: "/"
+          icon: "design_services",
+          ids: "#features"
         },
         {
           id: "2",
-          name: "Services",
-          icon: "room_service",
-          route: "/services"
+          name: "Screenshots",
+          icon: "screen_share",
+          ids: "#screen"
         },
         {
           id: "3",
-          name: "About Us",
-          icon: "info",
-          route: "/about"
-        },
-        {
-          id: "4",
-          name: "Contact Us",
-          icon: "call",
-          route: "/contact"
+          name: "Download Now",
+          icon: "get_app",
+          ids: "#downloadnow"
         }
       ],
       extralinks: [
         {
-          id: "1",
+          id: "101",
           title: "Discord",
           icon: "fab fa-discord",
           link: "https://discord.com/invite/s24egJNXqX"
         },
         {
-          id: "2",
+          id: "102",
           title: "Reddit",
           icon: "fab fa-reddit",
           link: "https://www.reddit.com/r/animezoneapp"
         },
         {
-          id: "3",
+          id: "103",
           title: "Github",
           icon: "fab fa-github",
           link: "https://github.com/spyderbibek/Anime-Zone"
@@ -178,6 +173,14 @@ export default {
           this.drawer = false;
         }
       }
+    },
+    goto(link) {
+      this.$vuetify.goTo(link.ids, {
+        duration: 200,
+        offset: 50,
+        easing: "linear"
+      }),
+        (this.drawer = false);
     }
   }
 };
