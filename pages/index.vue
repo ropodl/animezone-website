@@ -23,9 +23,29 @@
             >
               <v-icon class="mr-3">download</v-icon> Download App
             </v-btn>
-            <v-btn x-large icon class="play-button" style="">
+            <v-btn x-large icon class="play-button" @click="videoDialog()">
               <v-icon>play_arrow</v-icon>
             </v-btn>
+            <v-dialog
+              v-model="dialog"
+              width="100%"
+              max-width="900px"
+              @click:outside="videoDialogClose()"
+            >
+              <v-card class="pa-0 ma-0 video-dialog-card">
+                <v-responsive :aspect-ratio="16 / 9">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    id="player-1"
+                    :src="videoSrc"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""
+                    frameborder="0"
+                  ></iframe>
+                </v-responsive>
+              </v-card>
+            </v-dialog>
             <v-spacer></v-spacer>
           </div>
           <!-- </div> -->
@@ -45,10 +65,10 @@
               style="border-radius: 100%;background-color: #FF5722;height: 100px;width: 100px;position: absolute;left: 0%;top: 15%;"
             ></div>
             <div
-              style="border-radius: 100%;background-color: #FF5722;height: 100px;width: 100px;position: absolute;left: 78%;top: 15%;"
+              style="border-radius: 100%;background-color: #FF5722;height: 100px;width: 100px;position: absolute;right: 0%;top: 15%;"
             ></div>
             <div
-              style="border-radius: 100%;background-color: #FF5722;height: 250px;width: 250px;position: absolute;left: 50%;bottom: 0%;"
+              style="border-radius: 100%;background-color: #FF5722;height: 250px;width: 250px;position: absolute;right: 0%;bottom: 0%;"
             ></div>
           </div>
         </v-col>
@@ -96,7 +116,19 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      dialog: false,
+      videoSrc: null
+    };
+  },
+  methods: {
+    videoDialog() {
+      (this.videoSrc = "https://www.youtube.com/embed/Gjil2OxWirA"),
+        (this.dialog = true);
+    },
+    videoDialogClose() {
+      (this.videoSrc = null), (this.dialog = false);
+    }
   }
 };
 </script>
@@ -123,4 +155,13 @@ export default {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+// .video-dialog-card {
+//   height: 100%;
+//   overflow: hidden;
+//   iframe#player-1 {
+//     width: 100%;
+//     height: 100%;
+//     aspect-ratio: 16/9;
+//   }
+// }
 </style>
