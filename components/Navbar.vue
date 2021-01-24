@@ -55,7 +55,9 @@
               >
                 Screenshots
               </v-btn>
-              <v-btn rounded color="accent">Download App</v-btn>
+              <v-btn rounded link href="/animezone.apk" color="accent"
+                >Download App</v-btn
+              >
             </div>
           </v-col>
         </v-row>

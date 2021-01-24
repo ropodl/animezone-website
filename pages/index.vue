@@ -18,7 +18,7 @@
               rounded
               x-large
               link
-              href="https://animezone.info/apk/animezone.apk"
+              href="/animezone.apk"
               download
             >
               <v-icon class="mr-3">download</v-icon> Download App
@@ -97,7 +97,7 @@
         <v-col cols="12" class="d-flex justify-center">
           <div class="mx-auto text-center">
             <SectionTitle :first="'Download'" :second="'Now'" />
-            <v-btn rounded color="accent" x-large>
+            <v-btn rounded color="accent" x-large link href="/animezone.apk">
               <v-icon class="mr-3">download</v-icon>
               Download for android
             </v-btn>
