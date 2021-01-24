@@ -106,7 +106,7 @@
       </v-row>
       <div style="position:relative;">
         <div
-          style="position:absolute;top:-100px;width:200px;border-radius:100px;height:200px;background-color:#FF5722"
+          style="position:absolute;top:-50px;width:200px;border-radius:100px;height:200px;background-color:#FF5722"
         ></div>
       </div>
     </v-container>

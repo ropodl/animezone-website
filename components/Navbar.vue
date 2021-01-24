@@ -66,7 +66,7 @@
 
     <v-card tile>
       <!-- fixed -->
-      <v-navigation-drawer bottom height="auto" temporary app v-model="drawer">
+      <v-navigation-drawer color="#11161e" bottom height="auto" temporary app v-model="drawer">
         <v-list dense>
           <!-- router
             link -->
