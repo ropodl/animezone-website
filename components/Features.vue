@@ -1,26 +1,28 @@
 <template>
-  <v-row id="features">
-    <v-col cols="12">
-      <SectionTitle :first="'App'" :second="'Feature'" />
-    </v-col>
-    <v-col
-      cols="12"
-      md="4"
-      class="mx-auto"
-      v-for="feature in features"
-      :key="feature.id"
-    >
-      <v-card flat height="100%" color="transparent">
-        <v-card-title>
-          <v-icon class="mr-4" color="accent">{{ feature.icon }}</v-icon>
-          {{ feature.title }}
-        </v-card-title>
-        <v-card-text>
-          {{ feature.desc }}
-        </v-card-text>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-container>
+    <v-row id="features">
+      <v-col cols="12">
+        <SectionTitle :first="'App'" :second="'Feature'" />
+      </v-col>
+      <v-col
+        cols="12"
+        md="4"
+        class="mx-auto"
+        v-for="feature in features"
+        :key="feature.id"
+      >
+        <v-card flat height="100%" color="transparent">
+          <v-card-title>
+            <v-icon class="mr-4" color="accent">{{ feature.icon }}</v-icon>
+            {{ feature.title }}
+          </v-card-title>
+          <v-card-text>
+            {{ feature.desc }}
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
