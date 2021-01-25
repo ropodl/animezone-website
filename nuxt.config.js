@@ -24,6 +24,12 @@ export default {
             }
         ]
     },
+    /*
+   ** Customize the progress-bar color
+   */
+  loading: {
+    color: "#FF5722"
+  },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [],
@@ -55,12 +61,27 @@ export default {
     pwa: {
         manifest: {
             lang: 'en'
-        }
+        },
+        icon: {
+            source: "./static/icon.png"
+          },
+          meta: {
+            charset: "utf-8",
+            viewport: "width=device-width, initial-scale=1",
+            title: "AnimeZone",
+            author: "noob",
+            icon: "./static/icon.png",
+            theme_color: "#FF5722"
+          }
     },
 
     // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
     vuetify: {
         customVariables: ['~/assets/variables.scss'],
+        treeShake: true,
+        defaultAssets: {
+            icons: "mdi"
+          },
         theme: {
             dark: true,
             themes: {
@@ -82,5 +103,29 @@ export default {
     server: {
         // host: "192.168.1.105",
         // port: 8000
-    }
+    },
+    workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: "https://fonts.googleapis.com/.*",
+            handler: "cacheFirst",
+            method: "GET",
+            strategyOptions: {
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: "https://animezone.info/*",
+            handler: "cacheFirst",
+            method: "GET",
+            strategyOptions: {
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          }
+        ]
+      },
 }

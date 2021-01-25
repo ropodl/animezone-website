@@ -3,7 +3,7 @@
     <v-row class="d-flex align-center">
       <v-col cols="12" md="6">
         <!-- <div> -->
-        <div class="text-h3 mb-5 font-weight-light text-center text-md-left">
+        <div class="text-h3 mb-5 font-weight-medium text-center text-md-left">
           Discover new anime from all around the world
         </div>
         <div class="text-h6 mb-5 font-weight-light text-center text-md-left">
