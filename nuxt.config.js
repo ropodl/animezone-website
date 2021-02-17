@@ -11,7 +11,7 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' }
+            { hid: 'description', name: 'description', content: 'AnimeZone is an android app which aggregates many animes from different places right in to your smartphone.' }
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -69,7 +69,7 @@ export default {
             charset: "utf-8",
             viewport: "width=device-width, initial-scale=1",
             title: "AnimeZone",
-            author: "noob",
+            author: "noobs",
             icon: "./static/icon.png",
             theme_color: "#FF5722"
           }
