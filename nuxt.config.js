@@ -17,39 +17,53 @@ export default {
             },
             { hid: 'description', name: 'description', content: 'AnimeZone is an android app which aggregates many animes from different places right in to your smartphone.' },
             // Opengraph/Facebook
+            // {
+            //   property: 'og:type',
+            //   content: 'website'
+            // },
+            // {
+            //   property: 'og:url',
+            //   content: 'https://www.animezone.info/'
+            // },{
+            //   property: 'og:title',
+            //   content: 'AnimeZone - Best android app for streaming anime'
+            // },{
+            //   property: 'og:description',
+            //   content: 'AnimeZone is an android app which aggregates many animes from different places right in to your smartphone.'
+            // },
             {
-              property: 'og:type',
-              content: 'website'
-            },
-            {
-              property: 'og:url',
-              content: 'https://www.animezone.info/'
-            },{
-              property: 'og:title',
-              content: 'AnimeZone - Best android app for streaming anime'
-            },{
-              property: 'og:description',
-              content: 'AnimeZone is an android app which aggregates many animes from different places right in to your smartphone.'
-            },{
               property: 'og:image',
               content: 'https://www.animezone.info/icon.png'
             },
             // twitter
-            {
-              property: 'twitter:card',
-              content: 'summary_large_image'
-            },
-            {
-              property: "twitter:url",
-              content: "https://www.animezone.info/"
-            },
-            {
-              property: "twitter:title",
-              content: "AnimeZone - Best android app for streaming anime"
-            },{
-              property: "twitter:description",
-              content: "AnimeZone is an android app which aggregates many animes from different places right in to your smartphone."
-            },
+            // {
+            //   property: 'twitter:card',
+            //   content: 'summary_large_image'
+            // },
+            // {{
+            //   property: 'og:type',
+            //   content: 'website'
+            // },
+            // {
+            //   property: 'og:url',
+            //   content: 'https://www.animezone.info/'
+            // },{
+            //   property: 'og:title',
+            //   content: 'AnimeZone - Best android app for streaming anime'
+            // },{
+            //   property: 'og:description',
+            //   content: 'AnimeZone is an android app which aggregates many animes from different places right in to your smartphone.'
+            
+            //   property: "twitter:url",
+            //   content: "https://www.animezone.info/"
+            // },
+            // {
+            //   property: "twitter:title",
+            //   content: "AnimeZone - Best android app for streaming anime"
+            // },{
+            //   property: "twitter:description",
+            //   content: "AnimeZone is an android app which aggregates many animes from different places right in to your smartphone."
+            // },
             {
               property: 'twitter:image',
               content: 'https://www.animezone.info/icon.png'
