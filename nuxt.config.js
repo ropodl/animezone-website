@@ -60,7 +60,11 @@ export default {
     // PWA module configuration: https://go.nuxtjs.dev/pwa
     pwa: {
         manifest: {
-            lang: 'en'
+            lang: 'en',
+            name: 'AnimeZone',
+            short_name: 'AnimeZone',
+            description: 'AnimeZone is an android app which aggregates many animes from different places right in to your smartphone.',
+            background_color: '#11161e'
         },
         icon: {
             source: "./static/icon.png"

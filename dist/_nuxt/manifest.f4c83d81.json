@@ -1,7 +1,7 @@
 {
-  "name": "animezone",
-  "short_name": "animezone",
-  "description": "## Build Setup",
+  "name": "AnimeZone",
+  "short_name": "AnimeZone",
+  "description": "AnimeZone is an android app which aggregates many animes from different places right in to your smartphone.",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.d94333.png",
@@ -48,7 +48,7 @@
   ],
   "start_url": "/?standalone=true",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#11161e",
   "theme_color": "#FF5722",
   "lang": "en"
 }
